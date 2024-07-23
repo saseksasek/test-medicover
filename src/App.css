@@ -1,0 +1,117 @@
+.App {
+  gap: 10rem;
+  color: white;
+}
+
+.container {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 6rem;
+  gap: 15rem;
+
+  @media (max-width: 1000px) {
+    gap: 100px
+  }
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+    padding: 30px;
+    justify-content: space-between;
+  }
+}
+
+.today-weather {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 5px;
+
+  .today-celsius {
+    font-size: 48px;
+  }
+
+  .city-button {
+    font-size: 12px;
+    cursor: pointer;
+  }
+}
+
+.days-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 30px;
+
+  .days-title {
+    font-size: 12px;
+  }
+
+  .days {
+    width: 100px;
+    text-align: start;
+  }
+
+  .celsius {
+    width: 150px;
+    text-align: end;
+  }
+
+  @media (max-width: 800px) {
+    gap: 15px
+  }
+}
+
+.days-list-element {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+
+  @media (max-width: 1100px) {
+    width: 100%;
+  }
+}
+
+.chart-container {
+  margin-top: 20px;
+  padding: 5px;
+  background-color: white;
+  border-radius: 25px;
+  width: 500px;
+  height: 200px;
+
+  @media (max-width: 1100px) {
+    width: 100%;
+  }
+}
+
+.modal-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    width: 400px;
+    height: 300px;
+}
+
+.my-name {
+  width: 100%;
+  align-content: center;
+  padding-left: 50px;
+
+  @media (max-width: 800px) {
+    text-align: center;
+    padding-left: 0;
+  }
+}
